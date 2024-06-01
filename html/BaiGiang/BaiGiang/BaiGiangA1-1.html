@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../img/logo.png" type="image/x-icon">
+    <title>TT Đào tạo lái xe MôTô</title>
+
+
+    <!-- FONT WEB GG -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+    <!-- ICON -->
+    <!-- ICON FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ICON LINE AWESOME -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+    </style>
+
+
+    <!-- Hiệu ứng chữ chạy -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+    <!-- Hiệu ứng bật trình chiếu ảnh Fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+
+    <!-- Hiệu ứng chạy trang Slick JS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+    <!-- CSS HTML-->
+    <link rel="stylesheet" href="../../../CSS/style.css">
+
+
+
+
+</head>
+
+<body class="">
+
+    <!-- HEADER -->
+    <header>
+        <div class="header">
+            <nav class="container-xl navbar navbar-expand-lg">
+                <a class="header_logo" href="../../../index.html">
+                    <img src="../../../img/logo.png" alt="">
+                    <div class="header_logo_text">
+                        <h3>TRUNG TÂM ĐÀO TẠO LÁI XE MÔ TÔ</h3>
+                        <p>TỔ 11 - PHƯỜNG YÊN NINH - TP YÊN BÁI</p>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../index.html">Trang chủ <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Thông tin
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="../../../html/ThongTin/TinTuc/TinTuc.html">Tin tức</a>
+                                <a class="dropdown-item" href="../../../html/ThongTin/VeChungToi/ChungToi.html">Về chúng
+                                    tôi</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Khóa học
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="../../../html/KhoaHoc/KhoaA1/KhoaA1.html">Hạng A1</a>
+                                <a class="dropdown-item" href="../../../html/KhoaHoc/KhoaA2/KhoaA2.html">Hạng A2</a>
+                                <a class="dropdown-item" href="../../../html/KhoaHoc/KhoaA3/KhoaA3.html">Hạng A3</a>
+                                <a class="dropdown-item"
+                                    href="../../../html/DangKy/DangKyKhoaHoc/DangKyKhoaHoc.html">Đăng ký khóa học</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false" id="active_nav">
+                                Bài giảng
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="../../../html/BaiGiang/BaiGiang/BaiGiang.html"
+                                    id="active_nav">Bài
+                                    giảng</a>
+                                <a class="dropdown-item" href="../../../html/BaiGiang/ThiThu/Thithu.html">Thi Thử</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="btn-DK">
+                        <div class="btn_buy">
+                            <a onclick="kiemTraLogin()">
+                                <div class="btn_buy_number">
+                                    <p class="cardNumber"></p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <button class="btn-outline1 btn_user1" onclick="dangNhapKoTK()">
+                            <p>Đăng nhập</p>
+                        </button>
+
+                        <div class="btn-outline_user" data-target="#anUser" data-toggle="collapse">
+                            <button class="btn-outline1 btn_user2">
+                                <p class="btn_user2_text"></p>
+                            </button>
+                            <div class="btn_user_ten collapse hidden" id="anUser">
+                                <span>Tài khoản:</span>
+                                <h5 class="btn_user_tenND"></h5>
+                                <hr>
+
+                                <a href="../../../html/DangKy/DangNhapDangKy/QuanLyThongTin.html">
+                                    <p>Quản lý thông tin</p>
+                                </a>
+                                <!-- <hr> -->
+                                <a href="" onclick="logOutUser()">
+                                    <p>Đăng xuất</p>
+                                </a>
+                                <!-- <button class="btn btn-danger" onclick="logOutUser()">Đăng xuất</button> -->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- BANNER -->
+    <section class="ANH_BANNER">
+        <div class="banner_img">
+            <img src="../../../img/anh5.jpeg" alt="">
+            <div class="banner_text">
+                <h2>Bài giảng</h2>
+                <p>Sát hạch lái xe hạng A1</p>
+            </div>
+        </div>
+        <div class="banner_img_red">
+            <span>Bài giảng - Bằng A1 - Bài 1</span>
+        </div>
+    </section>
+
+
+    <!-- NEWS 3 -->
+    <section class="NEWS3">
+        <div class="container news_3">
+            <video class="" src="../../../img/A1.mp4" muted controls></video>
+
+            <div class="">
+                <h3>Mẹo thi bằng hạng A1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                    molestias veritatis consectetur veniam suscipit nihil, labore eligendi rem in aliquam neque
+                    maiores repellendus, voluptatem, nostrum voluptatibus numquam voluptate aliquid soluta. Ipsam
+                    adipisci repudiandae nihil officiis minus! Odit excepturi explicabo eligendi eum, magnam hic
+                    dolorem cupiditate autem non sapiente, recusandae, saepe nisi ipsum iste velit.
+                </p>
+
+                <div class="news_3_DK">
+                    <a href="../../../thu vien/ebook-content-marketing-113.pdf"><button class="btn_click_trang">Tài liệu tham khảo</button></a>
+                    <a href="../../../html/BaiGiang/ThiThu/Thithu.html"><button class="btn_click_trang">Thi
+                            thử ngay</button></a>
+                    <a href="../../../html/DangKy/DangKyKhoaHoc/DangKyKhoaHoc.html"><button class="btn_click_do">Đăng ký
+                            ngay</button></a>
+                </div>
+            </div>
+
+
+            <div class="news_4_item">
+                <h3>Hướng dẫn phần Luật :</h3>
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="heading1">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    Câu hỏi khái niệm
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <span>
+                                    – Phần đường xe chạy: được sử dụng cho các phương tiện giao thông qua lại.
+                                    <hr>– Làn đường xe chạy: được chia theo chiều dọc và có bề rộng đủ cho xe chạy an
+                                    toàn
+                                    <hr>– Dải phân cách: để phân chia mặt đường thành hai chiều xe chạy riêng biệt
+                                    <hr>– Dải phân cách có 2 loại: cố định và di động.
+                                    <hr>– Đường ưu tiên: được các phương tiện đến từ hướng khác nhường đường.
+                                    <hr>– Phương tiện tham gia giao thông: gồm 3 loại là : cơ giới, thô sơ, xe máy
+                                    chuyên dùng
+                                    <hr>– Phương tiện giao thông cơ giới: gồm xe ô tô… (kể cả xe máy điện).
+                                    <hr>– Phương tiện giao thông thô sơ: gồm xe đạp, xe xích lô, xe lăn….
+                                    <hr>– Dừng xe: là trạng thái đứng yên và đứng yên tạm thời .
+                                    <hr>– Đỗ xe: là trạng thái đứng yên và không giới hạn thời gian.
+                                    <hr>– Người lái xe : là người điều khiển xe cơ giới
+                                    <hr> – Người tham gia giao thông: người điều khiển người sử dụng phương tiện và dẫn
+                                    dắt súc vật, người đi bộ ….
+                                    <hr>– Người điều khiển phương tiên tham gia giao thông: cơ giới, thô sơ, xe máy
+                                    chuyên dùng.
+                                    <hr>– Người điểu khiển giao thông:là người được giao nhiệm vụ hướng dẫn giao thông,
+                                    cảnh sát giao thông.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading2">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapse2" aria-expanded="true"
+                                    aria-controls="collapse2">
+                                    Câu hỏi về hành vi bị cấm, bị nghiêm cấm
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <span>
+                                    – Chọn đáp án: Bị cấm(hoặc) Bị nghiêm cấm
+                                    <hr>– Chọn đáp án có chữ Không được…
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading3">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapse3" aria-expanded="true"
+                                    aria-controls="collapse3">
+                                    Câu hỏi về tốc độ + độ Tuổi
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <span>
+                                    – Nhớ xe gắn máy chỉ 40km/h – Do đó không chọn vào đáp án mà xe gắn máy >40km/h, hãy
+                                    loại nó ra .
+                                    <hr>– Câu hỏi tốc độ trong khu vực đông dân cư : ghi nhớ 50km/h ( đường 2 chiều) ,
+                                    60km/h (đường đôi)
+                                    <hr>* Độ tuổi bạn nhớ : Xe gắn máy: 16 tuổi. Mô tô Hạng A1: 18 tuổi .
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading4">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapse4" aria-expanded="true"
+                                    aria-controls="collapse4">
+                                    Những con số cần phải nhớ
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <span>
+                                    – Chỉ được báo hiệu bằng đèn khi lái xe trong đô thị từ 22 giờ đến 5 giờ sáng
+                                    <hr>– Cấm vào đường cao tốc : Người đi bộ,..những xe có tốc độ thiết kế nhỏ hơn
+                                    70km/h .
+                                    <hr>– Khi thấy phương tiên đường sắt tới thì dừng lại ngay và đỗ cách 5m tính từ ray
+                                    gần
+                                    nhất.
+                                    <hr>– Xe ô tô hỏng tại vị trí giao nhau với đường sắt : nhanh chóng đặt báo hiệu
+                                    cách
+                                    500m và đưa ô tô ra khỏi đường sắt.
+                                    <hr>– Sử dụng giấy phép lái xe đã khai báo bị mất thì sẽ bị thu hổi GPLX và không
+                                    được
+                                    cấp GPLX trong 5 năm
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading5">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapse5" aria-expanded="true"
+                                    aria-controls="collapse5">
+                                    Quy tắc giao thông đường bộ
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <span>
+                                    – Luôn chọn đáp án có từ : Giảm tốc độ, đi về phái bên phải, Từ từ, nhường đường,
+                                    không được quay đầu…
+                                    <hr>* Hiệu lệnh của người ĐKGT: giang hai tay: trái phải được đi. Tay giơ thẳng
+                                    đứng:
+                                    các xe dừng lại
+                                    <hr>* Sử dụng làn đường : Chỉ được đi trên 1 làn đường, chuyển làn ở những nơi cho
+                                    phép-
+                                    Xe thô sơ đi về phía bên phải.
+                                    <hr>* Câu hỏi nơi đường giao nhau: Giao nhau tại nơi không có vòng xuyến: nhường
+                                    đường
+                                    bên phải.
+                                    <hr>* Hầm đường bộ: Không được quay đầu xe
+                                    <hr>* Khi quay đầu: Tốc độ chậm
+                                    <hr>* Tránh xe đi ngược chiều : Xe gần chỗ tránh vào chỗ tránh trước, Xe xuống dốc
+                                    phải
+                                    nhường lên dốc
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading6">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapse6" aria-expanded="true"
+                                    aria-controls="collapse6">
+                                    Câu hỏi Văn Hoá - Đạo Đức
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <span>
+                                    Văn hóa – đạo đức: thì chọn đáp án có từ Cả ý 1 và 2
+                                    <hr>* Chọn đáp án : Chấp hành tốc độ, biển báo, người điều khiển, Giảm tốc độ, cho
+                                    xe đi
+                                    chậm, đi về phía bên phải.
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Biển báo + Sa hình</h3>
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="heading10">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapse10" aria-expanded="true"
+                                    aria-controls="collapse10">
+                                    Câu hỏi về biển báo hiệu
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapse10" class="collapse" aria-labelledby="heading10"
+                            data-parent="#accordionExample">
+                            <div class="card-body accordionExample_img">
+                                <span>
+                                    Biển <img src="../../../img/BienBao/bien-bao-cam-103a.jpeg" alt="">: Cấm xe cơ giới
+                                    từ 3 bánh trở lên (cấm Môtô 3 bánh và xe ô tô). Không cấm Môtô 2 bánh và Xe gắn máy.
+                                    <hr>Biển <img src="../../../img/BienBao/bien-bao-cam-104.jpeg" alt="">: Cấm Môtô 2
+                                    bánh và 3 bánh, Lưu ý là : biển này không cấm xe gắn máy nhé. Rất nhiều bạn sai ở
+                                    câu hỏi sa hình có xe gắn máy
+                                    <hr>Biển <img src="../../../img/BienBao/bien-bao-cam-123a.jpeg" alt="">: Cấm rẽ trái
+                                    và được quay đầu. Biển <img src="../../../img/BienBao/bien-bao-cam-124a.jpeg"
+                                        alt="">: Cấm quay đầu + nhưng được rẽ trái.
+                                    <hr>Biển <img src="../../../img/BienBao/bien-chi-dan-410.png" alt="">: Biển này chỉ
+                                    dẫn khu vực được phép quay đầu xe và được rẽ trái.
+                                    <hr>Biển <img src="../../../img/BienBao/20.jpeg" alt="">: Biển cấm ô tô, mô tô 3
+                                    bánh quay đầu xe, được rẽ trái
+                                    <hr>Biển <img src="../../../img/BienBao/22.jpeg" alt="">: Cấm ô tô, mô tô 3 bánh rẽ
+                                    trái – rẽ phải ,cấm quay đầu xe.
+                                    <hr>Biển <img src="../../../img/BienBao/8-1.jpeg" alt="">: Cấm ba bánh có động cơ :
+                                    xe lam, xích lô máy, xe lôi máy. (Không cấm xe xích lô không có máy)
+                                    <hr>Biển <img src="../../../img/BienBao/9.jpeg" alt="">: Cấm xích lô không có động
+                                    cơ
+                                    <hr>Biển <img src="../../../img/BienBao/11.jpeg" alt="">: Tốc độ tối đa cho phép về
+                                    ban đêm là 70km/h
+                                    <hr>Biển <img src="../../../img/BienBao/bien-bao-nguy-hiem-207a.jpeg" alt="">: Báo
+                                    hiệu giao nhau với đường không ưu tiên.
+                                    <hr>Biển <img src="../../../img/BienBao/huong-di-thang.jpeg" alt="">: Đường 1 chiều.
+                                    Biển <img src="../../../img/BienBao/2324324.jpeg" alt="">: hướng đi thẳng phải theo
+                                    <hr>Biển <img src="../../../img/BienBao/bien-bao-nguy-hiem-208.jpeg" alt="">: là Báo
+                                    hiệu giao nhau với đường ưu tiên.
+                                    <hr>Biển <img src="../../../img/BienBao/bien-bao-nguy-hiem-210.jpeg" alt="">: Giao
+                                    với đường sắt có rào chắn. Còn Biển này <img
+                                        src="../../../img/BienBao/bien-bao-nguy-hiem-211a.jpeg" alt=""> Giao với đường
+                                    sắt không rào chắn. Còn Biển này <img
+                                        src="../../../img/BienBao/bien-bao-nguy-hiem-242a-300x193.jpeg" alt=""> Nơi
+                                    đường sắt giao vuông góc với đường bộ (không có rào chắn)
+                                    <hr>Biển <img src="../../../img/BienBao/bien-bao-nguy-hiem-224.jpeg" alt="">: Nhường
+                                    đường cho người đi bộ. Biển <img src="../../../img/BienBao/bien-bao-cam-112.jpeg"
+                                        alt="">: Cấm nguời đi bộ. Biển <img
+                                        src="../../../img/BienBao/bien-hieu-lenh-305.jpeg" alt="">: Đường dành cho người
+                                    đi bộ.
+                                    <hr>Biển <img src="../../../img/BienBao/26.jpeg" alt="">: hết tốc độ tối đa. Biển
+                                    <img src="../../../img/BienBao/58.jpeg" alt="">: Hết tốc độ tối thiểu
+                                    <hr>Biển <img src="../../../img/BienBao/82.jpeg" alt="">: Sử dụng cầu vượt qua
+                                    đường. Biển <img src="../../../img/BienBao/84.jpeg" alt=""> : Sử dụng hầm cầu vượt
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading11">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapse11" aria-expanded="true"
+                                    aria-controls="collapse11">
+                                    Câu hỏi sa hình
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapse11" class="collapse" aria-labelledby="heading11"
+                            data-parent="#accordionExample">
+                            <div class="card-body accordionExample_img">
+                                <span>
+                                    Nhớ quy tắc sa hình :Ưu Tiên- Biển ưu tiên- Rẽ phải- Bên phải trống – đi thẳng – Rẽ
+                                    trái
+                                    <br>1. Xe ưu tiên đi truớc (ví dụ : cứu thuơng)
+                                    <br><img id="accordionExample_img2" src="../../../img/BienBao/saHinh_1.jpeg" alt="">
+                                    <br>Xe cứu thương đi trước
+                                    <br><img id="accordionExample_img2" src="../../../img/BienBao/saHinh_2.jpeg" alt="">
+                                    <br>Xe quân sự đi trước xe công an
+
+                                    <hr>2. Xe đi trên đuờng ưu tiên đi truớc (nhìn thấy biển <img
+                                        src="../../../img/BienBao/bien-bao-nguy-hiem-207a.jpeg" alt=""> hoặc <img
+                                        src="../../../img/BienBao/bien-chi-dan-401.png" alt="">: là đuợc ưu tiên đi
+                                    trước. <img src="../../../img/BienBao/bien-bao-nguy-hiem-208.jpeg" alt="">: là không
+                                    ưu tiên phải nhường đường)
+                                    <br><img id="accordionExample_img2" src="../../../img/BienBao/saHinh_3.jpeg" alt="">
+                                    <br>Xe con (B) nhìn thấy biển <img
+                                        src="../../../img/BienBao/bien-bao-nguy-hiem-207a.jpeg" alt=""> được ưu tiên do
+                                    đó được đi trước.
+
+                                    <hr>3. Xe nào bên phải không có xe nào (Bên phải trống) được đi truớc
+                                    <br><img id="accordionExample_img2" src="../../../img/BienBao/saHinh_4.jpeg" alt="">
+                                    <br>Xe mô tô bên phải không có xe nào (bên phải trống) do đó được đi trước sau đó là
+                                    xe CON, cuối cùng là ô tô Tải
+                                    <br><img id="accordionExample_img2" src="../../../img/BienBao/saHinh_5.jpeg" alt="">
+                                    <br>Xe đạp+ mô tô bên phải không có xe nào (bên phải trống) do đó được đi trước sau
+                                    đó là xe CON (A), cuối cùng là ô tô Con (B)
+
+                                    <hr>4. Xe nào rẽ phải đi truớc. Rẽ trái nhuờng đi thẳng
+                                    <br><img id="accordionExample_img2" src="../../../img/BienBao/saHinh_6.jpeg" alt="">
+                                    <br>Xe mô tô rẽ phải do đó được đi trước xe con
+                                    <br><img id="accordionExample_img2" src="../../../img/BienBao/saHinh_7.jpeg" alt="">
+                                    <br>Xe con rẽ phải đi trước- xe của bạn đi thẳng đi thứ 2, cuối cùng xe mô tô rẽ
+                                    trái nhường đi thẳng
+
+                                    <hr>– Chọn đáp án có chữ “không được”, “cấm” +Sa hình có CSGT đứng ở giữa hoặc vòng
+                                    xuyến chọn đáp án ý 3+ Đối với câu nhiều làn đường (câu 187+188) tìm đáp án có chữ E
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <h3>Bài thi thử bằng A1</h3>
+
+                <div class="news_4_item_text">
+                    <p>
+                        Hình thức: Miễn phí
+                        <br>
+                        Số câu hỏi: 25
+                        <br>
+                        Thời gian trả lời: 15 (phút)
+                        <br>
+                        Số câu cần đạt: 21
+                    </p>
+                </div>
+                <div class="news_4_item_text">
+                    <a href="../../../html/BaiGiang/BaiGiang/BaiGiang.html"><button class="btn_click_trang">Học thử trực
+                            tuyến</button></a>
+                    <a href="../../../html/BaiGiang/ThiThu/Thithu.html"><button class="btn_click_trang">Thi thử trực
+                            tuyến</button></a>
+                    <a href="../../../html/DangKy/DangKyKhoaHoc/DangKyKhoaHoc.html"><button class="btn_click_do">Đăng ký
+                            khóa học</button></a>
+                </div>
+
+
+                <div class="news_3_item">
+                    <h5>Trung Tâm Đào tạo lái xe Yên Bái | Tổ 11, Phường Yên Ninh, Tp Yên Bái</h5>
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- CÁC LOẠI BẰNG + GIÁ -->
+    <section class="LoaiBang">
+        <div class="container model">
+            <div class="model_text">
+                <h4>VỀ CHÚNG TÔI</h4>
+                <h2>Trung Tâm Đào Tạo Lái Xe Mô tô Yên Bái</h2>
+                <p>
+                    Sau hơn 10 năm thành lập, chúng tôi tự hào là hệ thống đào tạo và sát hạch học lái xe ô tô dẫn đầu
+                    cả nước về quy mô và chất lượng giảng dạy. Chức năng và nhiệm vụ chuyên tổ chức đào tạo GPLX ô tô và
+                    nâng hạng bằng lái theo quy định của Bộ GTVT.
+                    <br>
+                    <br>
+                    Với phương châm hoạt động “tận tâm vì sự an toàn của học viên”, chúng tôi luôn mang đến các khóa học
+                    lái xe ô tô có chất lượng tốt nhất với mức học phí hợp lý và rẻ nhất thị trường. Hiện nay, trung tâm
+                    tập trung đầu tư mạnh về cơ sở vật chất, trang thiết bị cảm ứng đồng thời nghiên cứu đổi mới quy
+                    trình quản lý và đào tạo nhằm phục vụ học viên tốt hơn nữa. Những năm gần đây, tỷ lệ học viên đỗ sát
+                    hạch và được cấp GPLX tại Trung tâm luôn ở mức trên 95%.
+                </p>
+                <h2>Khóa học đang diễn ra</h2>
+            </div>
+
+
+            <div class="row model_card">
+                <div class="card col-lg-4 col-md-6">
+                    <div class="model_box">
+                        <div class="model_img">
+                            <a href="../../../html/KhoaHoc/KhoaA1/KhoaA1.html">
+                                <img src="../../../img/anh14.jpeg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="model_footer">
+                                <a href="../../../html/KhoaHoc/KhoaA1/KhoaA1.html"><button class="btn_click_trang">Xem
+                                        thêm</button></a>
+                                <a href="../../../html/DangKy/DangKyKhoaHoc/DangKyKhoaHoc.html"><button
+                                        class="btn_click_do">Đăng ký</button></a>
+                            </div>
+                        </div>
+                        <div class="model_body">
+                            <a href="../../../html/KhoaHoc/KhoaA1/KhoaA1.html">HỌC LÁI BẰNG A1</a><br>
+                            <h3>350.000 VNĐ</h3>
+                            <!-- <h4>Trọn gói không phát sinh</h4> -->
+                            <hr>
+                            <p>
+                                Thời gian học: 01 tháng
+                                <br>
+                                Hồ sơ: Miễn phí
+                                <br>
+                                Lịch học: Hỗ trợ linh động
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6">
+                    <div class="model_box">
+                        <div class="model_img">
+                            <a href="../../../html/KhoaHoc/KhoaA2/KhoaA2.html">
+                                <img src="../../../img/anh13.jpeg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="model_footer">
+                                <a href="../../../html/KhoaHoc/KhoaA2/KhoaA2.html"><button class="btn_click_trang">Xem
+                                        thêm</button></a>
+                                <a href="../../../html/DangKy/DangKyKhoaHoc/DangKyKhoaHoc.html"><button
+                                        class="btn_click_do">Đăng ký</button></a>
+                            </div>
+                        </div>
+                        <div class="model_body">
+                            <a href="../../../html/KhoaHoc/KhoaA2/KhoaA2.html">HỌC LÁI BẰNG A2</a><br>
+                            <h3>500.000 VNĐ</h3>
+                            <!-- <h4>Trọn gói không phát sinh</h4> -->
+                            <hr>
+                            <p>
+                                Thời gian học: 01 tháng
+                                <br>
+                                Hồ sơ: Miễn phí
+                                <br>
+                                Lịch học: Hỗ trợ linh động
+                                <!-- <br>
+                                Hỗ trợ: Học đậu 100% -->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer_top">
+            <div class="footer_top__text">
+                <h2>Liên hệ ngay để nhận các ưu đãi hấp dẫn</h2>
+                <p>
+                    Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore nisi esse quasi, sit amet. Lorem
+                    ipsum dolor sit amet elit.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row container footer_button">
+            <div class="col-lg-4 col-md-6 footer_button__1">
+                <a class="header_logo" href="../../../index.html">
+                    <img src="../../../img/logo.png" alt="">
+                    <div class="header_logo_text">
+                        <h3>TRUNG TÂM ĐÀO TẠO LÁI XE MÔ TÔ</h3>
+                        <p>Tổ 11, Phường Yên Ninh, Tp Yên Bái</p>
+                    </div>
+                </a>
+                <p>
+                    Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+                    tempufddfel. Lorem ipsum dolor sit amet Semper at elit team advisors.
+                </p>
+                <div class="footer_button__1logo">
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 footer_button__2">
+                <!-- MST. 5200277745; Mã QHNS. 1095867: TK Ngân hàng. 3710728953. Tại BIDV Yên Bái -->
+                <h3>THÔNG TIN</h3>
+                <p>Địa chỉ: Tổ 11, Phường Yên Ninh, Tp Yên Bái</p>
+                <div>
+                    <span>Phone Number:</span>
+                    <a href="tel:091 234 4567">091 234 4567</a>
+                </div>
+                <!-- mailto::info@yenbai.com -->
+                <div>
+                    <span>Mã số thuế:</span>
+                    <a href="">5200277745</a>
+                </div>
+                <div>
+                    <span>Mã QHNS:</span>
+                    <a href="">1095867</a>
+                </div>
+                <div>
+                    <span>TK Ngân hàng:</span>
+                    <a href="">3710728953 - BIDV Yên Bái</a>
+                </div>
+                <!-- <div>
+                    <span>Support:</span>
+                    <a href="mailto::yenbai@support.com">yenbai@support.com</a>
+                </div> -->
+
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-5 col-6 mt-lg-0 mt-5 footer_button__3">
+                <h3>LUYỆN THI</h3>
+                <ul>
+                    <li><a href="../../../html/KhoaHoc/KhoaA1/KhoaA1.html">Bằng A1</a></li>
+                    <li><a href="../../../html/KhoaHoc/KhoaA2/KhoaA2.html">Bằng A2</a></li>
+                    <li><a href="../../../html/KhoaHoc/KhoaA3/KhoaA3.html">Bằng A3</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-5 col-6 mt-lg-0 mt-5 footer_button__4">
+                <h3>MENU</h3>
+                <ul>
+                    <li><a href="../../../html/ThongTin/TinTuc/TinTuc.html">Tin tức</a></li>
+                    <li><a href="../../../html/BaiGiang/ThiThu/Thithu.html">Thi thử</a></li>
+                    <li><a href="../../../html/BaiGiang/BaiGiang/BaiGiang.html">Bài giảng</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="footer_copyright">
+            <div class="container">
+                <p>
+                    © 2024 All Rights Reserved | Design by
+                    <span>
+                        Zaha Việt Nam
+                    </span>
+                    .
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- BACKTOTOP -->
+    <a href="" class="backToTop cd-top text-replace js-cd-top">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+    <!-- JS HTML -->
+    <script src="../../../JS/KTdangNhap.js"></script>
+
+    <Script src="../../../JS/index.js"></Script>
+
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <!-- CDN JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Cố định Header -->
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop()) {
+                    $('header').addClass('sticky');
+                } else {
+                    $('header').removeClass('sticky');
+                }
+            });
+        });
+    </script>
+
+
+
+    <!-- Trình chiếu ảnh Fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+    </script>
+
+
+
+    <!-- Hiệu ứng chạy trang Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.feedback_slide').slick({
+                // setting-name: setting-value
+                dots: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                // autoplay: true,
+                autoplaySpeed: 4000,
+
+            });
+        });
+    </script>
+
+    <!-- BACKTOTOP -->
+    <script src="../../../JS/util.js"></script>
+    <script src="../../../JS/main.js"></script>
+
+
+</body>
+
+</html>
