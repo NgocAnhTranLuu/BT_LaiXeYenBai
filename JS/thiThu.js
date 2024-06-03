@@ -349,7 +349,7 @@ document.getElementById("start-quiz").addEventListener("click", function () {
   const infoScreen = document.getElementById("info-screen");
 
   // THỜI GIAN THI
-  startCountdown(19*60);
+  startCountdown(19 * 60);
 
   // KHI CLICK VÀO NÚT BẮT ĐẦU THÌ NẾU ĐÃ CHỌN ĐỀ TÀI
   // 1. HIỂN THỊ QUIZ CONTENT (cha của answers-container và questions-container)
@@ -566,7 +566,6 @@ const showSelectAnswer = (questions) => {
         //click màu vàng nhạt
         event.currentTarget.style.backgroundColor = "#FFE3B3";
         event.currentTarget.style.borderRadius = "5px";
-
       }
     });
 
