@@ -299,7 +299,7 @@ function showQuestionDetails(index, questions) {
             <div class="answer p-2"
             style="${
               isQuizSubmitted && questionDetails.dap_an_dung.includes(i + 1)
-                ? "background-color: #FFE3B3; color: white; border-radius: 5px;"
+                ? "background-color: green; color: white; border-radius: 5px;"
                 : ""
             };"
             >${i + 1}. ${answer}
