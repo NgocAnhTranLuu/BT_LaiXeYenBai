@@ -349,7 +349,7 @@ document.getElementById("start-quiz").addEventListener("click", function () {
   const infoScreen = document.getElementById("info-screen");
 
   // THỜI GIAN THI
-  startCountdown(5);
+  startCountdown(19*60);
 
   // KHI CLICK VÀO NÚT BẮT ĐẦU THÌ NẾU ĐÃ CHỌN ĐỀ TÀI
   // 1. HIỂN THỊ QUIZ CONTENT (cha của answers-container và questions-container)
@@ -446,6 +446,7 @@ const handleClickSubmitButton = () => {
   //! 2. tạo và show modal kết quả,
   // code for modal
   // Prepare the result content for Modal
+  // đúng màu xanh đậu, trượt màu đỏ
   const resultContent = `
         <hr>
         <h5 class="pt-1">Kết quả thi:</h5>
@@ -454,7 +455,7 @@ const handleClickSubmitButton = () => {
         <p style="color: black; font-weight: 700;">Số câu chưa chọn: ${unselectedCount} câu.</p>
         <p>Bạn cần trả lời đúng ${quantity} câu hỏi thì đậu.</p>
         <p style="color: white; background-color: ${
-          correctCount >= quantity ? "green" : "red"
+          correctCount >= quantity ? "#92b12d" : "#DD4470"
         }; border-radius: 8px; padding: 10px; text-align: center;"> ${
     correctCount < quantity ? "Bạn đã trượt." : "Bạn đã đậu."
   }
@@ -481,7 +482,7 @@ const handleClickSubmitButton = () => {
       <p style="color: black; font-weight: 700;">Số câu chưa chọn: ${unselectedCount} câu.</p>
       <p>Bạn cần trả lời đúng ${quantity} câu hỏi thì đậu.</p>
       <p style="color: white; background-color: ${
-        correctCount >= quantity ? "green" : "red"
+        correctCount >= quantity ? "#92b12d" : "#DD4470"
       };
       border-radius: 8px; padding: 10px; text-align: center;">
       ${correctCount < quantity ? "Bạn đã trượt." : "Bạn đã đậu."}
@@ -562,7 +563,10 @@ const showSelectAnswer = (questions) => {
         allAnswerDivs.forEach((div) => (div.style.backgroundColor = ""));
         const clickedIndex = Number(event.currentTarget.dataset.index);
         showQuestionDetails(clickedIndex, questions);
-        event.currentTarget.style.backgroundColor = "#cacaca";
+        //click màu vàng nhạt
+        event.currentTarget.style.backgroundColor = "#FFE3B3";
+        event.currentTarget.style.borderRadius = "5px";
+
       }
     });
 
@@ -583,6 +587,7 @@ const showSelectAnswer = (questions) => {
 function showQuestionDetails(index, questions) {
   const questionDetails = questions[index];
   const questionsContainer = document.getElementById("questions-container");
+  //In ra màu xanh cho câu trả lời đúng ở phần câu hỏi
   questionsContainer.innerHTML = `
             <div class="question-number">
               <strong>
@@ -596,7 +601,7 @@ function showQuestionDetails(index, questions) {
             <div class="answer p-2"
             style="${
               isQuizSubmitted && questionDetails.correctAnswer.includes(i + 1)
-                ? "background-color: green; color: white; border-radius: 8px;"
+                ? "background-color: #92b12d; color: white; border-radius: 8px;"
                 : ""
             };"
             >${i + 1}. ${answer}
@@ -630,14 +635,15 @@ function checkAnswers(questions) {
       question.correctAnswer.every((answer) => selectedAnswers.includes(answer))
     ) {
       correctCount++;
-      answerDiv.style.backgroundColor = "rgb(0, 210, 0)"; // nền câu hỏi xanh: trả lời đúng
+      answerDiv.style.backgroundColor = "#C6DF76"; // nền câu hỏi xanh: trả lời đúng
     } else if (selectedAnswers.length === 0) {
       unselectedCount++;
-      answerDiv.style.backgroundColor = "yellow"; // nền câu hỏi vàng: chưa trả lời
+      answerDiv.style.backgroundColor = "#FFE3B3"; // nền câu hỏi vàng: chưa trả lời
     } else {
       incorrectCount++;
-      answerDiv.style.backgroundColor = "red"; // nền câu hỏi đỏ: trả lời sai
+      answerDiv.style.backgroundColor = "#DD4470"; // nền câu hỏi đỏ: trả lời sai
     }
+    answerDiv.style.borderRadius = "5px";
 
     // Highlight correct answers in green
     answerDiv.querySelectorAll("label").forEach((label, labelIndex) => {
@@ -646,7 +652,7 @@ function checkAnswers(questions) {
         label.style.borderRadius = "5px";
         label.style.padding = "3px";
         label.style.color = "white";
-        label.style.backgroundColor = "green";
+        label.style.backgroundColor = "#92b12d";
       }
     });
   });
