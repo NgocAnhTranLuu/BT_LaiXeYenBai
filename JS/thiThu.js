@@ -1,7 +1,5 @@
 // Bộ câu hỏi
 
-
-
 function getQuestions(topic) {
   if (topic === "A1 - Đề 1")
     return [
