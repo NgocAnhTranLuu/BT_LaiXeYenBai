@@ -12,6 +12,17 @@ function getTest(testNumber) {
     });
 }
 
+function getTime(testNumber) {
+  return axios
+    .get(`http://sathachlaixe.cntt.yenbai.vn/api/gettime/${testNumber}`)
+    .then((res) => {
+      return res.data.thoi_gian_tra_loi;
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+}
+
 async function getQuestions(topic) {
   if (topic === "A1 - Đề 1") return await getTest(1);
   else if (topic === "A1 - Đề 2") return await getTest(2);
@@ -484,6 +495,7 @@ window.addEventListener("keydown", function (event) {
 let countdownInterval;
 function startCountdown(duration) {
   let countdownElement = document.getElementById("countdown");
+  countdownElement = " ";
   let remainingTime = duration;
 
   countdownInterval = setInterval(() => {
